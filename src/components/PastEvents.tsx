@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const PastEvents = () => {
   return (
-    <section className="noise-bg py-16 px-6">
+    <section className="noise-bg pt-16 pb-8 px-6">
       <div className="container max-w-4xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Past Meetups
