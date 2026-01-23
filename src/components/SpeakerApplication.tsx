@@ -11,9 +11,12 @@ const topics = [
 const SpeakerApplication = () => {
   return (
     <section className="noise-bg py-20 px-6">
+      {/* Section divider at top */}
+      <div className="section-divider mb-20" />
+      
       <div className="container max-w-2xl">
         <div className="text-center mb-10">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
+          <div className="icon-glow inline-flex items-center justify-center w-16 h-16 rounded-full mb-6">
             <Mic className="w-8 h-8 text-primary" />
           </div>
 
@@ -27,7 +30,7 @@ const SpeakerApplication = () => {
           </p>
         </div>
 
-        <div className="card-noise bg-card rounded-xl border border-border p-6 md:p-8">
+        <div className="card-elevated rounded-xl p-6 md:p-8">
           <h3 className="text-xl font-semibold mb-6">
             What We're Looking For
           </h3>
@@ -35,13 +38,15 @@ const SpeakerApplication = () => {
           <ul className="space-y-4 mb-8">
             {topics.map((topic) => (
               <li key={topic} className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <div className="p-1 rounded-full bg-primary/20 border border-primary/30 mt-0.5 flex-shrink-0">
+                  <Check className="w-3.5 h-3.5 text-primary" />
+                </div>
                 <span className="text-muted-foreground">{topic}</span>
               </li>
             ))}
           </ul>
 
-          <p className="text-sm text-muted-foreground mb-8 p-4 bg-muted/30 rounded-lg">
+          <p className="text-sm text-muted-foreground mb-8 p-4 glass-card rounded-lg">
             Talks are typically 10-15 minutes plus a brief Q&A. We're happy to help you prepare 
             and can provide feedback on your talk outline.
           </p>

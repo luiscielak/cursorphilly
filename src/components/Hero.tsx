@@ -7,9 +7,40 @@ const Hero = () => {
   const nextEvent: Event | undefined = eventsData.upcoming[0];
 
   return (
-    <section className="noise-bg min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="container max-w-4xl text-center">
-        <h1 className="gradient-text text-hero mb-2 animate-fade-up">
+    <section className="noise-bg grid-pattern min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
+      {/* Animated gradient orbs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div 
+          className="absolute w-[600px] h-[600px] rounded-full animate-float opacity-30"
+          style={{
+            background: 'radial-gradient(circle, hsl(262 83% 66% / 0.15) 0%, transparent 70%)',
+            top: '-20%',
+            left: '-10%',
+          }}
+        />
+        <div 
+          className="absolute w-[500px] h-[500px] rounded-full animate-float-delayed opacity-20"
+          style={{
+            background: 'radial-gradient(circle, hsl(262 60% 70% / 0.2) 0%, transparent 70%)',
+            top: '10%',
+            right: '-15%',
+          }}
+        />
+        <div 
+          className="absolute w-[400px] h-[400px] rounded-full animate-float-slow opacity-25"
+          style={{
+            background: 'radial-gradient(circle, hsl(280 70% 60% / 0.12) 0%, transparent 70%)',
+            bottom: '5%',
+            left: '20%',
+          }}
+        />
+      </div>
+
+      {/* Hero glow */}
+      <div className="hero-glow" />
+
+      <div className="container max-w-4xl text-center relative z-10">
+        <h1 className="gradient-text text-glow text-hero mb-2 animate-fade-up">
           Cursor Meetup
         </h1>
         <p className="text-hero-sub text-muted-foreground mb-8 animate-fade-up" style={{ animationDelay: '0.1s' }}>
