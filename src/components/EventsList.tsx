@@ -4,9 +4,9 @@ import { formatDate } from "@/utils/formatDate";
 
 const EventsList = () => {
   return (
-    <section id="events" className="noise-bg py-20 px-6">
+    <section id="events" className="noise-bg py-16 px-6">
       {/* Section divider at top */}
-      <div className="section-divider mb-20" />
+      <div className="section-divider mb-12" />
       
       <div className="container max-w-4xl">
         <h2 className="text-section text-center mb-4 text-glow">

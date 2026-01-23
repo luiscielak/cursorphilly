@@ -10,9 +10,9 @@ const topics = [
 
 const SpeakerApplication = () => {
   return (
-    <section className="noise-bg py-20 px-6">
+    <section className="noise-bg py-16 px-6">
       {/* Section divider at top */}
-      <div className="section-divider mb-20" />
+      <div className="section-divider mb-12" />
       
       <div className="container max-w-2xl">
         <div className="text-center mb-10">
