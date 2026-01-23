@@ -17,8 +17,8 @@ const Hero = () => {
         </p>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 animate-fade-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
-          A Philadelphia-based community for developers, designers, engineers, and AI enthusiasts 
-          exploring how tools like Cursor are reshaping the way we build, design, and think.
+          A Philadelphia community for developers, designers, engineers, founders, and AI enthusiasts 
+          exploring how tools like Cursor are reshaping the way we build, create, and think.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up" style={{ animationDelay: '0.3s' }}>
