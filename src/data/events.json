@@ -24,5 +24,34 @@
       "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
       "lumaUrl": ""
     }
+  ],
+  "past": [
+    {
+      "date": "2025-12-17",
+      "day": "Wednesday",
+      "time": "6:00 – 8:30 PM",
+      "venue": "Indy Hall",
+      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
+      "attendees": 45,
+      "highlights": ["Lightning talks on Cursor workflows", "Networking session", "Live coding demo"]
+    },
+    {
+      "date": "2025-11-19",
+      "day": "Tuesday",
+      "time": "6:00 – 8:30 PM",
+      "venue": "Indy Hall",
+      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
+      "attendees": 38,
+      "highlights": ["Panel discussion on AI tools", "Beginner-friendly workshop", "Community showcase"]
+    },
+    {
+      "date": "2025-10-22",
+      "day": "Tuesday",
+      "time": "6:00 – 8:30 PM",
+      "venue": "Indy Hall",
+      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
+      "attendees": 32,
+      "highlights": ["Inaugural meetup", "Introduction to Cursor", "Open discussion"]
+    }
   ]
 }
