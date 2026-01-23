@@ -2,7 +2,7 @@ import { Mail, ArrowRight } from "lucide-react";
 
 const NewsletterSignup = () => {
   return (
-    <section className="section-elevated noise-bg pt-8 pb-16 px-6 relative overflow-hidden">
+    <section className="section-elevated noise-bg py-20 px-6 relative overflow-hidden">
       {/* Section divider at top */}
       <div className="section-divider mb-4" />
       
