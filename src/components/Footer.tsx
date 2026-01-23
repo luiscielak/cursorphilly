@@ -2,7 +2,7 @@ const socialLinks = [
   { label: "Luma", href: "https://luma.com/cursorcommunity?k=c&tag=philadelphia" },
   { label: "LinkedIn", href: "https://www.linkedin.com/groups/13297520/" },
   { label: "Substack", href: "https://substack.com/@cursorphilly" },
-  { label: "Discord", href: "https://discord.gg/FYk5V2nF" },
+  { label: "Discord", href: "https://discord.gg/Zt7tqsh47Z" },
 ];
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
               Cursor Meetup Philadelphia
             </h3>
             <p className="text-muted-foreground">
-              A community gathering for developers exploring AI-powered development tools.
+              A community gathering for anyone exploring AI-powered tools and workflows.
             </p>
           </div>
 
