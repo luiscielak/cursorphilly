@@ -13,9 +13,8 @@ const NewsletterSignup = () => {
           transform: 'translate(-50%, -50%)',
         }}
       />
-      
       {/* Section divider at top */}
-      <div className="section-divider mb-16" />
+      <div className="section-divider mb-10" />
       
       <div className="container max-w-2xl text-center relative z-10">
         <div className="icon-glow inline-flex items-center justify-center w-16 h-16 rounded-full mb-6">
