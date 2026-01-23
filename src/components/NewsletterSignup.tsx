@@ -2,9 +2,23 @@ import { Mail, ArrowRight } from "lucide-react";
 
 const NewsletterSignup = () => {
   return (
-    <section className="section-elevated noise-bg py-20 px-6">
-      <div className="container max-w-2xl text-center">
-        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
+    <section className="section-elevated noise-bg py-20 px-6 relative overflow-hidden">
+      {/* Background glow */}
+      <div 
+        className="absolute w-[600px] h-[400px] rounded-full opacity-20 pointer-events-none"
+        style={{
+          background: 'radial-gradient(circle, hsl(262 83% 66% / 0.2) 0%, transparent 70%)',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+        }}
+      />
+      
+      {/* Section divider at top */}
+      <div className="section-divider mb-20" />
+      
+      <div className="container max-w-2xl text-center relative z-10">
+        <div className="icon-glow inline-flex items-center justify-center w-16 h-16 rounded-full mb-6">
           <Mail className="w-8 h-8 text-primary" />
         </div>
 
