@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import EventsList from "@/components/EventsList";
+import PastEvents from "@/components/PastEvents";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import SpeakerApplication from "@/components/SpeakerApplication";
 import Footer from "@/components/Footer";
@@ -11,6 +12,9 @@ const Index = () => {
       <Hero />
       <ScrollReveal>
         <EventsList />
+      </ScrollReveal>
+      <ScrollReveal>
+        <PastEvents />
       </ScrollReveal>
       <ScrollReveal delay={0.1}>
         <NewsletterSignup />
