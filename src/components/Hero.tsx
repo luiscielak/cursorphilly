@@ -7,7 +7,7 @@ const Hero = () => {
   const nextEvent: Event | undefined = eventsData.upcoming[0];
 
   return (
-    <section className="noise-bg grid-pattern min-h-[85vh] flex items-center justify-center px-6 py-16 overflow-hidden">
+    <section className="noise-bg grid-pattern flex items-center justify-center px-6 py-20 overflow-hidden">
       {/* Animated gradient orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div 
