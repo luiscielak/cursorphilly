@@ -1,73 +1,100 @@
-# Welcome to your Lovable project
+# Cursor Meetup Philadelphia Landing Page
 
-## Project info
+A modern landing page for **Cursor Meetup Philadelphia** - a community event series for developers, engineers, and AI enthusiasts who use or are curious about Cursor (an AI-powered code editor) and similar AI development tools.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## About
 
-## How can I edit this code?
+This landing page showcases upcoming meetup events, provides speaker application forms, newsletter signup, and connects visitors to community resources. The site is built with React and Vite, featuring a dark theme with modern design aesthetics.
 
-There are several ways of editing your application.
+**Live Site**: [cursorphilly.com](https://cursorphilly.com)
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Hero Section**: Eye-catching introduction with event registration CTAs
+- **Upcoming Events**: List of upcoming meetups with dates, venues, and registration links
+- **Newsletter Signup**: Substack subscription integration
+- **Speaker Application**: Call-to-action for community members to apply as speakers
+- **Past Events**: Archive of previous meetups
+- **Footer**: Social links and community resources
+- **Responsive Design**: Mobile-first design that works on all devices
+- **Modern UI**: Built with shadcn/ui components and Tailwind CSS
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack
 
-**Use your preferred IDE**
+- **Vite**: Fast build tool and dev server
+- **React**: UI library
+- **TypeScript**: Type safety
+- **shadcn/ui**: Component library
+- **Tailwind CSS**: Utility-first CSS framework
+- **React Router**: Client-side routing
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Installation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/luiscielak/cursorphilly.git
+   cd cursorphilly
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:8080`
+
+The development server will automatically reload when you make changes to the code.
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
+- `npm test` - Run tests
+
+## Project Structure
+
+```
+landing-page/
+├── public/          # Static assets
+├── src/
+│   ├── components/ # React components
+│   ├── pages/      # Page components
+│   ├── data/       # Data files (events.json)
+│   ├── hooks/      # Custom React hooks
+│   ├── lib/        # Utility functions
+│   └── utils/      # Helper functions
+├── .github/        # GitHub Actions workflows
+└── package.json    # Dependencies and scripts
 ```
 
-**Edit a file directly in GitHub**
+## Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This project is deployed to GitHub Pages with a custom domain. See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
 
-**Use GitHub Codespaces**
+### Quick Deploy
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Push changes to the `main` branch
+2. GitHub Actions will automatically build and deploy
+3. The site will be available at [cursorphilly.com](https://cursorphilly.com)
 
-## What technologies are used for this project?
+## Contributing
 
-This project is built with:
+This is a project for the Cursor Meetup Philadelphia community. For questions or suggestions, please reach out through the community channels listed in the footer.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## License
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+MIT
