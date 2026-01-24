@@ -68,12 +68,12 @@ const SpeakerApplication = () => {
               Apply to speak
               <ArrowRight className="w-4 h-4" />
             </a>
-            <a
+            {/* <a
               href="mailto:cursormeetup@gmail.com?subject=Speaker%20Suggestion"
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
             >
               Suggest a speaker
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

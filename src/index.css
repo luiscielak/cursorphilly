@@ -332,4 +332,15 @@
     animation: float 12s ease-in-out infinite;
     animation-delay: -6s;
   }
+
+  /* Hero text sizes */
+  .text-hero {
+    @apply text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold;
+    font-size: clamp(3rem, 8vw, 6rem);
+  }
+
+  .text-hero-sub {
+    @apply text-2xl sm:text-3xl md:text-4xl font-light;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+  }
 }

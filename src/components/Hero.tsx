@@ -49,15 +49,15 @@ const Hero = () => {
 
       <div className="container max-w-4xl text-center relative z-10">
         <h1 className="gradient-text text-glow text-hero mb-2 animate-fade-up">
-          Cursor Meetup
+          Cursor Philly
         </h1>
         <p className="text-hero-sub text-muted-foreground mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-          Philadelphia
+          Philadelphia Meetup
         </p>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
-          A Philly community for developers, designers, and creators building and thinking{" "}
-          <span className="whitespace-nowrap">with AI.</span>
+          Join Philly developers, designers, and creators sharing workflows, demos, and insights{" "}
+          <span className="whitespace-nowrap">about building with AI.</span>
         </p>
 
         <div className="flex flex-col items-center gap-4 animate-fade-up" style={{ animationDelay: '0.25s' }}>
