@@ -62,23 +62,30 @@ const Hero = () => {
 
         <div className="flex flex-col items-center gap-4 animate-fade-up" style={{ animationDelay: '0.25s' }}>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
-            {nextEvent && nextEvent.lumaUrl ? (
-              <a
-                href={nextEvent.lumaUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary inline-flex items-center gap-2 w-full sm:w-auto justify-center text-base"
-              >
-                <Calendar className="w-5 h-5" />
-                Register for the next meetup
-                <ArrowRight className="w-4 h-4" />
-              </a>
-            ) : (
-              <span className="btn-disabled inline-flex items-center gap-2">
-                <Calendar className="w-5 h-5" />
-                Next Event Coming Soon
-              </span>
-            )}
+            <div className="flex flex-col items-center gap-2">
+              {nextEvent && nextEvent.lumaUrl ? (
+                <a
+                  href={nextEvent.lumaUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary inline-flex items-center gap-2 w-full sm:w-auto justify-center text-base"
+                >
+                  <Calendar className="w-5 h-5" />
+                  Register for the next meetup
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              ) : (
+                <span className="btn-disabled inline-flex items-center gap-2">
+                  <Calendar className="w-5 h-5" />
+                  Next Event Coming Soon
+                </span>
+              )}
+              {nextEvent && nextEvent.lumaUrl && (
+                <span className="text-xs text-muted-foreground">
+                  Free · RSVP required · Limited seats
+                </span>
+              )}
+            </div>
 
             <a
               href="#events"
@@ -87,12 +94,6 @@ const Hero = () => {
               View all events
             </a>
           </div>
-
-          {nextEvent && nextEvent.lumaUrl && (
-            <span className="text-xs text-muted-foreground">
-              Free · RSVP required · Limited seats
-            </span>
-          )}
         </div>
       </div>
     </section>
