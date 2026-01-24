@@ -1,4 +1,11 @@
+/**
+ * CHANGELOG:
+ * - Added WhatToExpect section between Hero and EventsList
+ * - Adjusted scroll reveal delays for better flow
+ */
+
 import Hero from "@/components/Hero";
+import WhatToExpect from "@/components/WhatToExpect";
 import EventsList from "@/components/EventsList";
 import PastEvents from "@/components/PastEvents";
 import NewsletterSignup from "@/components/NewsletterSignup";
@@ -11,15 +18,18 @@ const Index = () => {
     <main className="min-h-screen">
       <Hero />
       <ScrollReveal>
+        <WhatToExpect />
+      </ScrollReveal>
+      <ScrollReveal>
         <EventsList />
       </ScrollReveal>
       <ScrollReveal>
         <PastEvents />
       </ScrollReveal>
-      <ScrollReveal delay={0.1}>
+      <ScrollReveal delay={0.05}>
         <NewsletterSignup />
       </ScrollReveal>
-      <ScrollReveal delay={0.1}>
+      <ScrollReveal delay={0.05}>
         <SpeakerApplication />
       </ScrollReveal>
       <ScrollReveal>
