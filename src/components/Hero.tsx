@@ -61,8 +61,8 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col items-center gap-4 animate-fade-up" style={{ animationDelay: '0.25s' }}>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
-            <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-start w-full">
+            <div className="flex flex-col items-center gap-2 w-full sm:w-auto">
               {nextEvent && nextEvent.lumaUrl ? (
                 <a
                   href={nextEvent.lumaUrl}
@@ -75,13 +75,13 @@ const Hero = () => {
                   <ArrowRight className="w-4 h-4" />
                 </a>
               ) : (
-                <span className="btn-disabled inline-flex items-center gap-2">
+                <span className="btn-disabled inline-flex items-center gap-2 w-full sm:w-auto">
                   <Calendar className="w-5 h-5" />
                   Next Event Coming Soon
                 </span>
               )}
               {nextEvent && nextEvent.lumaUrl && (
-                <span className="text-xs text-muted-foreground">
+                <span className="text-xs text-muted-foreground text-center">
                   Free · RSVP required · Limited seats
                 </span>
               )}
