@@ -1,3 +1,5 @@
+import FooterArtwork from "./FooterArtwork";
+
 const socialLinks = [
   { label: "Luma", href: "https://luma.com/cursorcommunity?k=c&tag=philadelphia" },
   { label: "LinkedIn", href: "https://www.linkedin.com/groups/13297520/" },
@@ -9,8 +11,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border py-12 px-6">
-      <div className="container max-w-4xl">
+    <footer className="border-t border-border">
+      <FooterArtwork />
+      <div className="container max-w-4xl py-12 px-6">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 mb-12">
           <div className="max-w-sm">
             <h3 className="text-xl font-semibold mb-2">

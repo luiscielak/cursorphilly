@@ -1,0 +1,28 @@
+{
+  "upcoming": [
+    {
+      "date": "2026-01-29",
+      "day": "Thursday",
+      "time": "6:00 – 8:30 PM",
+      "venue": "Indy Hall",
+      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
+      "lumaUrl": "https://luma.com/cbyt2uxo"
+    },
+    {
+      "date": "2026-02-24",
+      "day": "Tuesday",
+      "time": "6:00 – 8:30 PM",
+      "venue": "Indy Hall",
+      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
+      "lumaUrl": "https://luma.com/f6egsatb"
+    },
+    {
+      "date": "2026-03-31",
+      "day": "Tuesday",
+      "time": "6:00 – 8:30 PM",
+      "venue": "Indy Hall",
+      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
+      "lumaUrl": ""
+    }
+  ]
+}

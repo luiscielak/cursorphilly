@@ -11,8 +11,8 @@ import { Button } from "@/components/ui/button";
 const stats = [
   {
     icon: Users,
-    value: "150+",
-    label: "attendees",
+    value: "250+",
+    label: "members",
   },
   {
     icon: Mic,
@@ -31,7 +31,7 @@ const PastEvents = () => {
     <section className="noise-bg py-14 px-6">
       <div className="container max-w-4xl">
         <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8">
-          Past Meetups
+          Our Community
         </h2>
 
         <div className="grid grid-cols-3 gap-4 md:gap-8 mb-8 max-w-lg mx-auto">
