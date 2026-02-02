@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  --color-accent: #8b5cf6;
+  --color-accent-hover: #a78bfa;
+  --color-secondary: #3b82f6;
+  --color-muted: #1f1f1f;
+  --color-muted-foreground: #a3a3a3;
+  --color-border: #2a2a2a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background-color, #0a0a0a);
+}
+
+body {
+  background: var(--background-color, #0a0a0a);
+  color: var(--text-color, #ededed);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dithering effect using CSS */
+.dither {
+  position: relative;
+  overflow: hidden;
+}
+
+.dither::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.03) 2px,
+      rgba(255, 255, 255, 0.03) 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.03) 2px,
+      rgba(255, 255, 255, 0.03) 4px
+    );
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.dither-strong {
+  position: relative;
+  overflow: hidden;
+}
+
+.dither-strong::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 1px,
+      var(--dither-color, rgba(139, 92, 246, 0.1)) 1px,
+      var(--dither-color, rgba(139, 92, 246, 0.1)) 2px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 1px,
+      var(--dither-color, rgba(139, 92, 246, 0.1)) 1px,
+      var(--dither-color, rgba(139, 92, 246, 0.1)) 2px
+    );
+  pointer-events: none;
+  mix-blend-mode: screen;
+  opacity: var(--dither-opacity, 0.6);
+  z-index: 1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color, #0a0a0a);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f1f1f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2a2a;
+}
+
+/* Accessibility: Focus states */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-color, #8b5cf6);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Ensure focus is visible for keyboard navigation */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--accent-color, #8b5cf6);
+  outline-offset: 2px;
+}
