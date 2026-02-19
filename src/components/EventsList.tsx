@@ -6,13 +6,22 @@
  * - Added "Open in Google Maps ↗" link
  * - CTA changed to "RSVP on Luma ↗"
  * - Disabled CTA shows "Coming Soon" without external icon
+ * - Show only next event + 2 upcoming; "Show more" when there are more
  */
 
-import { Calendar, Clock, MapPin, ExternalLink } from "lucide-react";
+import { useState } from "react";
+import { Calendar, Clock, MapPin, ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
 import eventsData from "@/data/events.json";
 import { formatDate, getMonthName } from "@/utils/formatDate";
 
+const INITIAL_VISIBLE = 3; // next event + 2 upcoming max
+
 const EventsList = () => {
+  const [showAll, setShowAll] = useState(false);
+  const upcoming = eventsData.upcoming;
+  const visibleEvents = showAll ? upcoming : upcoming.slice(0, INITIAL_VISIBLE);
+  const hasMore = upcoming.length > INITIAL_VISIBLE;
+
   const generateMapsUrl = (address: string) => {
     return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
   };
@@ -31,7 +40,7 @@ const EventsList = () => {
         </p>
 
         <div className="space-y-5">
-          {eventsData.upcoming.map((event, index) => {
+          {visibleEvents.map((event, index) => {
             const isFeatured = index === 0;
             const monthName = getMonthName(event.date);
 
@@ -115,6 +124,28 @@ const EventsList = () => {
             );
           })}
         </div>
+
+        {hasMore && (
+          <div className="flex justify-center mt-8">
+            <button
+              type="button"
+              onClick={() => setShowAll(!showAll)}
+              className="btn-secondary inline-flex items-center gap-2"
+            >
+              {showAll ? (
+                <>
+                  Show less
+                  <ChevronUp className="w-4 h-4" />
+                </>
+              ) : (
+                <>
+                  Show more upcoming events
+                  <ChevronDown className="w-4 h-4" />
+                </>
+              )}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
