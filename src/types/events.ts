@@ -9,4 +9,5 @@ export interface Event {
 
 export interface EventsData {
   upcoming: Event[];
+  past: Event[];
 }
