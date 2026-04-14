@@ -1,4 +1,6 @@
-# Cursor Meetup Philadelphia Landing Page
+# Cursor Meetup Philadelphia Landing Page (legacy Vite)
+
+> **New public site:** the production-bound app lives in **`sites/cursorphilly/`** (Next.js, Vercel). See [sites/cursorphilly/DEPLOYMENT.md](../sites/cursorphilly/DEPLOYMENT.md). This folder remains for GitHub Pages builds until DNS is pointed at Vercel and the workflow here is disabled.
 
 A modern landing page for **Cursor Meetup Philadelphia** - a community event series for developers, engineers, and AI enthusiasts who use or are curious about Cursor (an AI-powered code editor) and similar AI development tools.
 
