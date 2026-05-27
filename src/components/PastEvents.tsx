@@ -1,28 +1,23 @@
 /**
  * CHANGELOG:
  * - Replaced simple block with credibility stats
- * - Added 3 stats: attendees, lightning talks, hosted at
+ * - 2 stats: community members, lightning talks
  * - Kept "View past events on Luma" button
  */
 
-import { ExternalLink, Users, Mic, MapPin } from "lucide-react";
+import { ExternalLink, Users, Mic } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const stats = [
   {
     icon: Users,
-    value: "250+",
+    value: "450+",
     label: "members",
   },
   {
     icon: Mic,
-    value: "10+",
+    value: "20+",
     label: "lightning talks",
-  },
-  {
-    icon: MapPin,
-    value: "Indy Hall",
-    label: "hosted at",
   },
 ];
 
@@ -34,7 +29,7 @@ const PastEvents = () => {
           Our Community
         </h2>
 
-        <div className="grid grid-cols-3 gap-4 md:gap-8 mb-8 max-w-lg mx-auto">
+        <div className="grid grid-cols-2 gap-4 md:gap-8 mb-8 max-w-md mx-auto">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="flex justify-center mb-2">

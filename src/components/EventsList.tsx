@@ -10,7 +10,7 @@
  */
 
 import { useState } from "react";
-import { Calendar, Clock, MapPin, ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
+import { Calendar, Clock, MapPin, Video, ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
 import eventsData from "@/data/events.json";
 import { formatDate, getMonthName } from "@/utils/formatDate";
 
@@ -62,9 +62,16 @@ const EventsList = () => {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
                   <div className="space-y-3">
                     {/* Event title */}
-                    <h3 className="text-lg md:text-xl font-semibold text-foreground">
-                      Cursor Meetup Philly — {monthName}
-                    </h3>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <h3 className="text-lg md:text-xl font-semibold text-foreground">
+                        {event.title ?? `Cursor Meetup Philly — ${monthName}`}
+                      </h3>
+                      {event.format === 'online' && (
+                        <span className="inline-flex items-center rounded-full border border-muted-foreground/30 bg-muted/40 px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
+                          Online
+                        </span>
+                      )}
+                    </div>
 
                     <div className="flex items-center gap-3 text-primary">
                       <div className="p-2 rounded-lg bg-primary/10 border border-primary/20">
@@ -82,24 +89,33 @@ const EventsList = () => {
                       <span className="text-foreground/80">{event.time}</span>
                     </div>
 
-                    <div className="flex items-start gap-3 text-muted-foreground">
-                      <div className="p-2 rounded-lg bg-muted/30 mt-0.5">
-                        <MapPin className="w-4 h-4" />
+                    {event.format === 'online' ? (
+                      <div className="flex items-center gap-3 text-muted-foreground">
+                        <div className="p-2 rounded-lg bg-muted/30">
+                          <Video className="w-4 h-4" />
+                        </div>
+                        <span className="text-foreground/90 font-medium">{event.venue}</span>
                       </div>
-                      <div>
-                        <p className="text-foreground/90 font-medium">{event.venue}</p>
-                        <p className="text-sm text-foreground/70">{event.address}</p>
-                        <a
-                          href={generateMapsUrl(event.address)}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-xs text-primary hover:text-primary/80 inline-flex items-center gap-1 mt-1 transition-colors"
-                        >
-                          Open in Google Maps
-                          <ExternalLink className="w-3 h-3" />
-                        </a>
+                    ) : (
+                      <div className="flex items-start gap-3 text-muted-foreground">
+                        <div className="p-2 rounded-lg bg-muted/30 mt-0.5">
+                          <MapPin className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <p className="text-foreground/90 font-medium">{event.venue}</p>
+                          <p className="text-sm text-foreground/70">{event.address}</p>
+                          <a
+                            href={generateMapsUrl(event.address)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-primary hover:text-primary/80 inline-flex items-center gap-1 mt-1 transition-colors"
+                          >
+                            Open in Google Maps
+                            <ExternalLink className="w-3 h-3" />
+                          </a>
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
 
                   <div className="flex-shrink-0">

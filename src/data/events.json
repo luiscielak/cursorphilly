@@ -1,12 +1,14 @@
 {
   "upcoming": [
     {
-      "date": "2026-05-26",
+      "title": "Cursor Philadelphia — Design Your Business OS",
+      "date": "2026-06-09",
       "day": "Tuesday",
-      "time": "6:00 – 8:30 PM",
-      "venue": "Indy Hall",
-      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
-      "lumaUrl": "https://luma.com/sxcpht6k"
+      "time": "6:00 – 8:00 PM EDT",
+      "venue": "Online · Google Meet",
+      "address": "",
+      "lumaUrl": "https://luma.com/8r9mic8t",
+      "format": "online"
     },
     {
       "date": "2026-06-23",
@@ -15,9 +17,26 @@
       "venue": "Indy Hall",
       "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
       "lumaUrl": "https://luma.com/1rm6wsz6"
+    },
+    {
+      "title": "Cafe Cursor Philadelphia",
+      "date": "2026-07-16",
+      "day": "Thursday",
+      "time": "6:00 – 8:30 PM",
+      "venue": "Percy Diner & Bar",
+      "address": "1700 N Front St, Philadelphia, PA 19122",
+      "lumaUrl": "https://luma.com/tkx269iu"
     }
   ],
   "past": [
+    {
+      "date": "2026-05-26",
+      "day": "Tuesday",
+      "time": "6:00 – 8:30 PM",
+      "venue": "Indy Hall",
+      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
+      "lumaUrl": "https://luma.com/sxcpht6k"
+    },
     {
       "date": "2026-04-28",
       "day": "Tuesday",

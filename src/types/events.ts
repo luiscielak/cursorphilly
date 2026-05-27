@@ -5,6 +5,8 @@ export interface Event {
   venue: string;
   address: string;
   lumaUrl: string;
+  title?: string;
+  format?: 'online' | 'in-person';
 }
 
 export interface EventsData {
