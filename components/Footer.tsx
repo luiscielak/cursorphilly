@@ -5,7 +5,7 @@ export default function Footer() {
     luma: "https://luma.com/cursorcommunity?k=c&tag=philadelphia",
     linkedin: "https://www.linkedin.com/groups/13297520/",
     substack: "https://substack.com/@cursorphilly",
-    discord: "https://discord.gg/FYk5V2nF"
+    discord: "https://discord.gg/qXPAZNRR3T"
   };
 
   return (

@@ -20,7 +20,7 @@ Before deploying, update the following placeholder URLs and links:
     luma: "https://lu.ma/cursor-philly", // Your Luma profile/group
     linkedin: "https://linkedin.com/groups/...", // LinkedIn group URL
     substack: "https://substack.com/@cursorphilly", // Cursor Philly Substack
-    discord: "https://discord.gg/FYk5V2nF" // Cursor Philly Discord
+    discord: "https://discord.gg/qXPAZNRR3T" // Cursor Philly Discord
   };
   ```
 

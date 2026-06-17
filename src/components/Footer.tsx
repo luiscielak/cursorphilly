@@ -2,7 +2,7 @@ const socialLinks = [
   { label: "Luma", href: "https://luma.com/cursorcommunity?k=c&tag=philadelphia" },
   { label: "LinkedIn", href: "https://www.linkedin.com/groups/13297520/" },
   { label: "Substack", href: "https://substack.com/@cursorphilly" },
-  { label: "Discord", href: "https://discord.gg/Zt7tqsh47Z" },
+  { label: "Discord", href: "https://discord.gg/qXPAZNRR3T" },
 ];
 
 const Footer = () => {
