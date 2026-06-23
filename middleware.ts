@@ -1,0 +1,46 @@
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+
+export function middleware(request: NextRequest) {
+	const nonce = crypto.randomUUID();
+
+	const csp = [
+		`default-src 'self'`,
+		`script-src 'self' 'nonce-${nonce}' 'strict-dynamic' https://va.vercel-scripts.com`,
+		// fonts.googleapis.com is allowed so the Philly navbar wordmark (Thasadith) can load its stylesheet
+		`style-src 'self' 'unsafe-inline' https://fonts.googleapis.com`,
+		`img-src 'self' https://images.unsplash.com data: blob:`,
+		// fonts.gstatic.com serves the Google Fonts files referenced from globals.css
+		`font-src 'self' https://fonts.gstatic.com`,
+		`connect-src 'self' https://vitals.vercel-insights.com`,
+		`frame-src 'none'`,
+		`frame-ancestors 'none'`,
+		`object-src 'none'`,
+		`base-uri 'self'`,
+		`form-action 'self'`,
+		`upgrade-insecure-requests`,
+	].join('; ');
+
+	const requestHeaders = new Headers(request.headers);
+	requestHeaders.set('x-nonce', nonce);
+	requestHeaders.set('Content-Security-Policy', csp);
+
+	const response = NextResponse.next({
+		request: { headers: requestHeaders },
+	});
+	response.headers.set('Content-Security-Policy', csp);
+
+	return response;
+}
+
+export const config = {
+	matcher: [
+		{
+			source: '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+			missing: [
+				{ type: 'header', key: 'next-router-prefetch' },
+				{ type: 'header', key: 'purpose', value: 'prefetch' },
+			],
+		},
+	],
+};
