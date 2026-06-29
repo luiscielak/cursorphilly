@@ -1,7 +1,29 @@
 {
   "upcoming": [
     {
-      "title": "Cursor Philadelphia — Design Your Business OS",
+      "title": "Cursor Meetup Philadelphia — June",
+      "date": "2026-06-30",
+      "day": "Tuesday",
+      "time": "6:00 – 8:30 PM",
+      "venue": "Indy Hall",
+      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
+      "lumaUrl": "https://luma.com/1rm6wsz6",
+      "format": "in-person"
+    },
+    {
+      "title": "Cafe Cursor Philadelphia",
+      "date": "2026-07-16",
+      "day": "Thursday",
+      "time": "10:00 AM – 3:00 PM",
+      "venue": "Percy Diner & Bar",
+      "address": "1700 N Front St, Philadelphia, PA 19122",
+      "lumaUrl": "https://luma.com/tkx269iu",
+      "format": "in-person"
+    }
+  ],
+  "past": [
+    {
+      "title": "Design Your Business Operating System",
       "date": "2026-06-09",
       "day": "Tuesday",
       "time": "6:00 – 8:00 PM EDT",
@@ -11,63 +33,54 @@
       "format": "online"
     },
     {
-      "date": "2026-06-30",
-      "day": "Tuesday",
-      "time": "6:00 – 8:30 PM",
-      "venue": "Indy Hall",
-      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
-      "lumaUrl": "https://luma.com/1rm6wsz6"
-    },
-    {
-      "title": "Cafe Cursor Philadelphia",
-      "date": "2026-07-16",
-      "day": "Thursday",
-      "time": "10:00 AM – 3:00 PM",
-      "venue": "Percy Diner & Bar",
-      "address": "1700 N Front St, Philadelphia, PA 19122",
-      "lumaUrl": "https://luma.com/tkx269iu"
-    }
-  ],
-  "past": [
-    {
+      "title": "Cursor Meetup Philadelphia — May",
       "date": "2026-05-26",
       "day": "Tuesday",
       "time": "6:00 – 8:30 PM",
       "venue": "Indy Hall",
       "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
-      "lumaUrl": "https://luma.com/sxcpht6k"
+      "lumaUrl": "https://luma.com/sxcpht6k",
+      "format": "in-person"
     },
     {
+      "title": "Cursor Meetup Philadelphia — April",
       "date": "2026-04-28",
       "day": "Tuesday",
       "time": "6:00 – 8:30 PM",
       "venue": "Indy Hall",
       "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
-      "lumaUrl": "https://luma.com/adpxm0s7"
+      "lumaUrl": "https://luma.com/adpxm0s7",
+      "format": "in-person"
     },
     {
+      "title": "Cursor Meetup Philadelphia — March",
       "date": "2026-03-31",
       "day": "Tuesday",
       "time": "6:00 – 8:30 PM",
       "venue": "Indy Hall",
       "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
-      "lumaUrl": "https://luma.com/j1d4fg2z"
+      "lumaUrl": "https://luma.com/j1d4fg2z",
+      "format": "in-person"
     },
     {
+      "title": "Cursor Meetup Philadelphia — February",
       "date": "2026-02-24",
       "day": "Tuesday",
       "time": "6:00 – 8:30 PM",
       "venue": "Indy Hall",
       "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
-      "lumaUrl": "https://luma.com/f6egsatb"
+      "lumaUrl": "https://luma.com/f6egsatb",
+      "format": "in-person"
     },
     {
+      "title": "Cursor Meetup Philadelphia — January",
       "date": "2026-01-29",
       "day": "Thursday",
       "time": "6:00 – 8:30 PM",
       "venue": "Indy Hall",
       "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
-      "lumaUrl": "https://luma.com/cbyt2uxo"
+      "lumaUrl": "https://luma.com/cbyt2uxo",
+      "format": "in-person"
     },
     {
       "date": "2025-09-17",
@@ -75,7 +88,8 @@
       "time": "6:00 – 8:30 PM",
       "venue": "Blah Blah Gallery",
       "address": "",
-      "lumaUrl": ""
+      "lumaUrl": "",
+      "format": "in-person"
     },
     {
       "date": "2025-08-14",
@@ -83,7 +97,8 @@
       "time": "6:00 – 8:30 PM",
       "venue": "Forin Café",
       "address": "",
-      "lumaUrl": ""
+      "lumaUrl": "",
+      "format": "in-person"
     }
   ]
 }
