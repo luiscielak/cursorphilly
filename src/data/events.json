@@ -1,26 +1,6 @@
 {
   "upcoming": [
     {
-      "title": "Cursor Meetup Philadelphia — June",
-      "date": "2026-06-30",
-      "day": "Tuesday",
-      "time": "6:00 – 8:30 PM",
-      "venue": "Indy Hall",
-      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
-      "lumaUrl": "https://luma.com/1rm6wsz6",
-      "format": "in-person"
-    },
-    {
-      "title": "Cafe Cursor Philadelphia",
-      "date": "2026-07-16",
-      "day": "Thursday",
-      "time": "10:00 AM – 3:00 PM",
-      "venue": "Percy Diner & Bar",
-      "address": "1700 N Front St, Philadelphia, PA 19122",
-      "lumaUrl": "https://luma.com/tkx269iu",
-      "format": "in-person"
-    },
-    {
       "title": "Cursor Meetup Philadelphia — July",
       "date": "2026-07-28",
       "day": "Tuesday",
@@ -82,6 +62,26 @@
     }
   ],
   "past": [
+    {
+      "title": "Cafe Cursor Philadelphia",
+      "date": "2026-07-16",
+      "day": "Thursday",
+      "time": "10:00 AM – 3:00 PM",
+      "venue": "Percy Diner & Bar",
+      "address": "1700 N Front St, Philadelphia, PA 19122",
+      "lumaUrl": "https://luma.com/tkx269iu",
+      "format": "in-person"
+    },
+    {
+      "title": "Cursor Meetup Philadelphia — June",
+      "date": "2026-06-30",
+      "day": "Tuesday",
+      "time": "6:00 – 8:30 PM",
+      "venue": "Indy Hall",
+      "address": "709 N 2nd St 3rd Floor, Philadelphia, PA 19123",
+      "lumaUrl": "https://luma.com/1rm6wsz6",
+      "format": "in-person"
+    },
     {
       "title": "Design Your Business Operating System",
       "date": "2026-06-09",
